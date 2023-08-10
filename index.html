@@ -30,12 +30,12 @@
             #contact-me {text-align: center; font-size: 12px;  padding: 10px; border: 1px solid black;
                          background-color:rgb(255, 255, 255); box-shadow: 0 0px 0px rgba(0,0,0,0);
                          font-family: Arial, Helvetica; line-height:1.5; margin: 20px 0;}    
-            textarea, label {
-                         width: 189px;
-                         resize:vertical;
-                        }
-            .space {margin-bottom: 5px;}            
-                      
+            label { resize:vertical;
+                   width: 100px;}
+
+            .space {margin-bottom: 5px;
+                     }            
+            .form-label, .form-input {width: 200px; display: block; }
 
         </style>
     </head>
@@ -93,16 +93,16 @@
 
 
                         <div class="space">
-                            <label for="name"></label>
-                            <input type="text" id="name" name="name" placeholder="Name">
+                            <label for="name" class="form-label"></label>
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-input">
                         </div>
                         <div class="space">
-                            <label for="email"></label>
-                            <input type="text" id="email" name="email" placeholder="Email">
+                            <label for="email" class="form-label"></label>
+                            <input type="text" id="email" name="email" placeholder="Email" class="form-input">
                         </div>
                         <div class="space">
-                            <label for="message"></label>
-                            <textarea id="message" name="message"  placeholder= "Massage"></textarea>
+                            <label for="message" class="form-label"></label>
+                            <textarea id="message" name="message"  placeholder= "Massage" class="form-input"></textarea>
 
                         </div>
 
