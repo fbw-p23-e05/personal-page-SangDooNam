@@ -26,9 +26,20 @@
                 align-items:center; height: 200px;
             }
 
-            #contact-me {text-align: center; margin-right: 10px; line-height: 3; font-family:Arial, Helvetica;
-                         line-height: 2; font-size: 12px; display: grid; justify-content: center; }    
-            
+            #contact-me {text-align: center; font-family:Arial, Helvetica;
+                         line-height: 2; font-size: 12px; border: 0px solid black; margin: 20px; padding: 1em; }  
+
+            .form-field {display:flex;
+                         align-items: center;
+                         margin-bottom: 10px;}
+
+            .form-field label {flex-basis:100px;
+                               margin-right: 10px;}  
+
+            form {display : flex;
+                 flex-direction: column;
+                 align-items: center;}
+
         </style>
     </head>
 
@@ -81,15 +92,15 @@
                     <h4>Contact me &#128516</h4>
                     
                     <form action="mailto:kexe009@hotmail.com" method="post" enctype="text/plain">
-                        <div>
+                        <div class="form-field">
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="name">
                         </div>
-                        <div>
+                        <div class="form-field">
                             <label for="email">E-mail:</label>
                             <input type="text" id="email" name="email">
                         </div>
-                        <div>
+                        <div class="form-field">
                             <label for="message">Message:</label>
                             <textarea id="message" name="message"></textarea>
                         </div>
