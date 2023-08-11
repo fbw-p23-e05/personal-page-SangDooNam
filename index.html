@@ -1,74 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>SangDoo'page</title>
-        <style>
-            h1 {font-family: Verdana;
-                color: blue;
-                text-align: center;
-                margin:30px;}
-
-            .contents {font-family: Arial, Helvetica; color:blue;
-                       line-height: 1.6;
-                       margin: 20px; text-align: justify;
-                       font-size: 12px;
-                    }
-            .text-box {max-width: 300px; padding: 20px; border: 0px solid black;
-                       background-color:rgba(255, 255, 255, 0); box-shadow: 0 0px 0px rgba(0,0,0,0);
-                      font-family: Arial, Helvetica; line-height:1.5; margin: 20px 0; 
-                     }
-
-            .box {max-width: 300px; min-height: 200px; padding: 20px; border: 0px solid black;
-                       background-color:rgba(255, 255, 255, 0); box-shadow: 0 0px 0px rgba(0,0,0,0);
-                      font-family: Arial, Helvetica; line-height:1.5; margin: 20px 0; 
-                     }
-
-            #centered {text-align: center;
-                       font-family: Arial, Helvetica;}
-            .centered-container {
-                display:flex; justify-content: center;
-                align-items:center; height: 200px;
-            }
-
-
-            #contact-me {text-align: center; font-size: 12px;  padding: 10px; border: 1px solid black;
-                         background-color:rgb(255, 255, 255); box-shadow: 0 0px 0px rgba(0,0,0,0);
-                         font-family: Arial, Helvetica; line-height:1.5; margin: 20px 0;}    
-            label { resize:vertical;
-                   width: 100px;}
-
-            .space {margin-bottom: 5px;
-                     }            
-            .form-label, .form-input {width: 200px; display: block; }
-
-            .gallery {display: inline-block; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-                      gap: 10px;
-                    }
-            .gallery img {
-                width: 500px; height:auto; border-radius: 0px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                transition: transform 0.2s;
-            }
-            .gallery img:hover {
-                transform: scale(1.1);
-            }
-
-            .height_section {height: 400px;}
-            .height_section_second {height: 300px;}
-
-            .striped-background {
-            background: repeating-linear-gradient(to right, #FFFFFF, #FFFFFF 150px, hsl(218, 100%, 93%) 0px, hsl(218, 100%, 93%) 300px);
-            height: 100vh; /* Adjust as needed */
-            width: 100%; 
-        }
-
-
-        </style>
+        <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
-        <div class="striped-background">
+        
         <div>
             <h1>Welcome to SangDoo's page!</h1>
         </div>
@@ -117,7 +57,15 @@
                     </ul>
                 </div>
             </section>
-            
+
+            <div id="game">
+                <div class="block" id="block"></div>
+            </div>
+            <div class="centered-container contents vertical-align-container">
+                <h4>press ↑ 2times</h4>
+                
+            <button onclick="stopGame()">Stop</button>
+        </div>
         <section class="centered-container height_section_second">
             <div id="contact-me" >
                     <h4>Contact me &#128516</h4>
@@ -143,7 +91,9 @@
                     </form>
                     
                 </div>
+
             </section>  
-        </div>
+            <script src="script.js"></script>
+        
     </body>
 </html>
