@@ -25,14 +25,14 @@
                     document.getElementById('game').style.display = 'block';
 
                     let block = document.getElementById('block');
-                    let position = 0;
+                    let position = 350;
 
                     moveInterval = setInterval(() => {
-                        position += 5;
+                        position -= 5;
                         block.style.top = position + 'px';
 
-                        if (position > 350) {
-                            position = 0;
+                        if (position < 0) {
+                            position = 350;
                         }
                     }, 100); 
                 }    
