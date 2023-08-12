@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SangDoo'page</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+
+    <body>
+        
+        <div>
+            <h1>Welcome to SangDoo's page!</h1>
+        </div>
+       
+            <section class="centered-container">
+                <div class="contents text-box">
+                <h2 id="centered">about me </h2>
+                <p>Hi, I'm SangDoo from South Korea. I've recently started learning programming. 
+                    I don't have any hobbies because I believe one's job should also be their hobby. 
+                    Apart from programming, I've studied fine art, making me an artist as well. 
+                    If you're curious about my artwork, please visit 
+                    <a href="https://www.sangdoonam.com/"> my website </a>   
+                     </p>
+                </div>     
+            </section>
+            
+            <section class="centered-container height_section" >
+
+                <div class="gallery">
+                    <img src="images/hey.jpg" alt="painting in 2022">
+                    
+                </div>
+                </section>
+               
+            <section class="centered-container ">
+                <div class="contents box">
+                    <h4>list of my favorite Websites</h4>
+                    <ul>
+                        <li><a href="https://www.youtube.com/"> Youtube</a></li>
+                        <li><a href="https://www.khanacademy.org/"> Kahn academy</a></li>
+                        <li><a href="https://www.indexberlin.com/">Indexberlin</a></li>
+                        <li><a href="https://ocw.mit.edu/">MIT OpenCourseWare</a></li>
+                        <li><a href="https://www.kunstforum.de/">Kunstforum</a></li>
+                    </ul>
+                </div>
+
+                <div class="contents box">
+                    <h4>list of my favorite destinations</h4>
+                    <ul>
+                        <li>Seoul</li>
+                        <li>Berlin</li>
+                        <li>Heidelberg</li>
+                        <li>Venice</li>
+                        <li>Tokyo</li>
+                        <li>Uno in shikoku in japan</li>
+                    </ul>
+                </div>
+            </section>
+
+            <div id="game">
+                <div class="block" id="block"></div>
+            </div>
+            <div class="centered-container contents vertical-align-container">
+                <h4 id="instruction">press "↑" 2 times</h4>
+                
+            <button onclick="stopGame()" id="stopbutton">Stop</button>
+        </div>
+        <section class="centered-container height_section_second">
+            <div id="contact-me" >
+                    <h4>Contact me &#128516</h4>
+                    
+                    <form action="mailto:kexe009@hotmail.com" method="post" enctype="text/plain">
+
+
+                        <div class="space">
+                            <label for="name" class="form-label"></label>
+                            <input type="text" id="name" name="name" placeholder="Name" class="form-input">
+                        </div>
+                        <div class="space">
+                            <label for="email" class="form-label"></label>
+                            <input type="text" id="email" name="email" placeholder="Email" class="form-input">
+                        </div>
+                        <div class="space">
+                            <label for="message" class="form-label"></label>
+                            <textarea id="message" name="message"  placeholder= "Massage" class="form-input"></textarea>
+
+                        </div>
+
+                        <button type="submit">Send</button>
+                    </form>
+                    
+                </div>
+
+            </section>  
+            <script src="script.js"></script>
+        
+    </body>
+</html>
